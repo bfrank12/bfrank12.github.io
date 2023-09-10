@@ -1,4 +1,8 @@
 CREATE TABLE table_name (
-    col1 char(20) NOTNULL,
-    col2 int(100) 
+    col1 char(20) NOT NULL,
+    col2 INTEGER 
     );
+
+ALTER TABLE table_name {
+
+}
