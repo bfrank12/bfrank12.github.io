@@ -24,7 +24,8 @@ body {
     margin-top:100px;
     margin-left: 200px;
     margin-right: 200px;
-    background-color:rgba(10, 164, 235, 0.19);
+    /* background-color:rgba(10, 164, 235, 0.19); */
+    background-color: rgba(255, 218, 185, 0.241);
     column-count: 2;
     font-size: large;
     font-weight: 200;
@@ -68,7 +69,8 @@ h1 {
 }
 
 header {
-    background-color: #eb0a0ed3;
+    /* background-color: #eb0a0ed3; */
+    background-color: rgba(65, 105, 225, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -94,8 +96,82 @@ footer {
     right: 0;
     height: 300px;
 }
+
+@media (min-width:80em){
+    .Highlighs {
+        position: absolute;
+
+
+    }
+    .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+    }
+    body {
+        column-count: 1;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    #image {
+        opacity: 0%;
+    }
+    .next {
+        position: absolute;
+        right: 200px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+
+
+
+
+}
   
 @media (max-width:80em) {
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 375px;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next{
+        position: absolute;
+        left: 610px;
+    }
+    .prev {
+        left: 10px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
     body {
         column-count: 1;
         margin-left: 50px;
@@ -144,4 +220,11 @@ footer {
         position: absolute;
         left: 100px;
     }
+}
+
+.icon {
+    scale: 10%;
+    position: absolute;
+    left: -250px;
+    top: -205px;
 }
