@@ -1,0 +1,276 @@
+
+
+
+.Naked {
+    font-family: 'Inter', sans-serif;
+    font-size: xx-large ;
+    position: relative;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    z-index: 20000000;
+    bottom: 17.5px;
+    top: 0px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+body {
+    margin-top:100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    /* background-color:rgba(10, 164, 235, 0.19); */
+    background-color: rgba(255, 218, 185, 0.241);
+    column-count: 2;
+    font-size: large;
+    font-weight: 200;
+} 
+
+
+h1 {
+    border-bottom: 10px solid #ff0000;
+}
+
+
+
+.case {
+    border: 5px solid #eb9c0a0c;
+    border-radius: 20px;  
+    background-color: #eb9c0a3f; 
+    box-shadow: 10px 5px 5px grey;
+    overflow: scroll;
+    position: relative;
+    height: 100px;
+    width: 400px;
+    font-size: large;
+    margin-left: 30px;
+}
+
+
+#image {
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    z-index: -100000;
+    width: 344px; 
+    height: 258px; 
+    box-shadow: 10px 5px 5px grey;
+    transform: scale(1);
+    transition-duration: .5s;
+
+}
+#image:hover {
+    transform: scale(1.1);    
+}
+
+header {
+    /* background-color: #eb0a0ed3; */
+    background-color: rgb(154, 179, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 5px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 5px 3px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+footer {
+    font-size: large;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    border: 15px;
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    right: 0;
+    height: 300px;
+}
+
+.highlights {
+    height: 240px;
+}
+
+@media (min-width:80em){ /* initially i did this in case i didnt like it, but then i did but if i try to change it now i will likely destroy everything... :\ */
+
+    .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+    }
+    body {
+        column-count: 1;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    #image {
+        position: absolute;
+        right: 500px;
+        bottom: 0px;
+        transform: scale(1);
+        transition-duration: .5s;
+        scale: 1.5;
+        margin-bottom: 75px;
+    }
+    #image:hover {
+        transform: scale(1.1);    
+    }
+    .next {
+        position: absolute;
+        right: 200px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+
+
+    .stats {
+        position: absolute;
+        right: 475px;
+        bottom: -175px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -500px;
+    }
+
+    .highlights {
+        position: relative;
+        top: -75px;
+    }
+
+    .prev, .next {
+        position: absolute;
+        top: 225px;
+    }
+
+    .next {
+        right: 50px;
+    }
+
+    .prev {
+        right: 855px;
+    }
+
+    
+
+
+}
+  
+@media (max-width:80em) {
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 375px;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next{
+        position: absolute;
+        left: 610px;
+    }
+    .prev {
+        left: 10px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+        color: white;
+    }
+    body {
+        column-count: 1;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    footer {
+        font-size: large;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: center;
+        border: 15px;
+        position: absolute;
+        bottom: -560px;
+        left: 0;
+        right: 0;
+        height: 300px;
+    }
+    #image {
+        justify-content: center;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        z-index: -100000;
+        width: 387px; 
+        height: 290.25px; 
+        box-shadow: 10px 5px 5px grey;
+        transform: scale(1);
+        transition-duration: .5s;
+        transform: scale(1);
+        transition-duration: .5s;
+
+    }
+    #image:hover {
+        transform: scale(1.1);    
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #image:hover {
+        transform: scale(1.5);    
+    }
+    h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .case {
+        position: absolute;
+        left: 100px;
+    }
+}
+
+.icon {
+    scale: 10%;
+    position: absolute;
+    left: -250px;
+    top: -205px;
+}
