@@ -16,6 +16,7 @@
     z-index: 20000000;
     bottom: 17.5px;
     top: 0px;
+    pointer-events:none;
 }
 
 h2 {
@@ -171,6 +172,8 @@ figure {
 
 
 
+
+
 a {
     color: #fff;
     text-decoration: none;
@@ -180,11 +183,9 @@ a {
      height: 100%;
   }
   
-  
-  
-  
   .hamburger1 {
     height: 45px;
+    width: 45px;
     margin: 10px;
     display: -ms-grid;
     display: grid;
@@ -204,6 +205,8 @@ a {
   }
   
   #toggle1 {
+    width: 45px;
+    height: 45px;
     display: none;
   }
   
@@ -230,29 +233,26 @@ a {
   
   
   .menu1 {
-    width: 100%;
-    background-color: #02173F;
-    margin: 0;
+    position: absolute;
+    right: 30px;
+    background-color: #b3b3b3;
     display: -ms-grid;
     display: grid;
     grid-template-rows: 1fr repeat(4, 0.5fr);
     grid-row-gap: 25px;
-    padding: 0;
-    list-style: none;
-    clear: both;
-    width: auto;
+    width: 100px;
     text-align: center;
-    height: 0px;
     overflow: hidden;
     transition: height .4s ease;
     z-index: 120;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    border-radius: 10px solid;
   }
   
   .link1 {
     width: 100%;
-    margin: 0;
+    margin-bottom: 20px;
     padding: 10px 0;
     font: 700 20px 'Oswald', sans-serif;
   }
@@ -267,7 +267,7 @@ a {
   .dropDown {
     position: absolute;
     top: 5px;
-    right: -20px;
+    right: 5px;
   }
 
 
