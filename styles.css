@@ -179,6 +179,12 @@ figure {
 }
 
 
+@media (max-width:20em) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 @media (max-width:80em) {
     .prev, .next {
