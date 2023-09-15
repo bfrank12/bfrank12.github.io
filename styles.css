@@ -229,30 +229,47 @@ a {
   
   #toggle1:checked ~ .menu1 {
     height: 340px;
+    border: black 3px solid;
+    border-radius: 10px;
   }
   
   
   .menu1 {
     position: absolute;
-    right: 30px;
-    background-color: #b3b3b3;
+    right: 25px;
+    width: 100%;
+    background-color: lightgrey;
+    margin: 0;
     display: -ms-grid;
     display: grid;
     grid-template-rows: 1fr repeat(4, 0.5fr);
     grid-row-gap: 25px;
-    width: 100px;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    width: auto;
     text-align: center;
+    height: 0px;
     overflow: hidden;
     transition: height .4s ease;
     z-index: 120;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    border-radius: 10px solid;
+  }
+  
+  .menu1 a:first-child {
+    margin-top: 40px;
+  }
+  
+  .menu1 a:last-child {
+    margin-bottom: 40px;
   }
   
   .link1 {
+    color: black;
+    background-color: lightgrey;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 0;
     padding: 10px 0;
     font: 700 20px 'Oswald', sans-serif;
   }
@@ -267,7 +284,7 @@ a {
   .dropDown {
     position: absolute;
     top: 5px;
-    right: 5px;
+    right: -10px;
   }
 
 
