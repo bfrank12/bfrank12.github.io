@@ -179,12 +179,12 @@ figure {
 }
 
 
-@media (max-width:400px) {
+/* @media (max-width:400px) {
     body {
         margin-left: 0;
         margin-right: 0;
     }
-}
+} */
 
 @media (max-width:80em) {
     .prev, .next {
