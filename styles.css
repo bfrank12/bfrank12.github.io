@@ -25,6 +25,7 @@ h2 {
     justify-content: center;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: lighter;
 }
 
 body {
@@ -119,6 +120,7 @@ footer {
     display: flex;
     position: relative;
     margin-top: -75px;
+    justify-content: center;
 }
 
 
@@ -192,6 +194,8 @@ a {
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     z-index: 120;
+    position: absolute;
+    right: 15px;
   }
   
   .hamburger1 div {
@@ -204,7 +208,7 @@ a {
     transition: all 0.2s ease-in-out;
   }
   
-  #toggle1 {
+  #toggle1 { 
     width: 45px;
     height: 45px;
     display: none;
@@ -236,6 +240,7 @@ a {
   
   .menu1 {
     position: absolute;
+    top: 75px;
     right: 25px;
     width: 100%;
     background-color: lightgrey;
@@ -333,9 +338,8 @@ a {
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 325px;
+        top: 295px;
         width: auto;
-        margin-top: -30px;
         padding: 16px;
         color: #888;
         font-weight: bold;
@@ -365,7 +369,6 @@ a {
         justify-content: center;
         border-radius: 15px;
         margin-bottom: 25px;
-        z-index: -100000;
         width: 344px; 
         height: 258px; 
         box-shadow: 10px 5px 5px grey;
@@ -383,11 +386,6 @@ a {
         align-items: center;
     }
 
-    h2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 .icon {
