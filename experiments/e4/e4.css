@@ -1,0 +1,105 @@
+
+
+body {
+
+    font-family: 'Arial', sans-serif;
+    background-image: url('space.jpg');
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 125px;
+}
+
+.container {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+#planet1 {
+    top: 20px;
+    left: 50px; 
+    width: 150px;
+    height: auto;
+}
+
+#planet2 {
+    top: 100px;
+    right: 50px; 
+    width: 200px;
+    height: auto;
+}
+
+#spaceship1 {
+    bottom: -200px; 
+    left: 500px;
+    width: 200px;
+    height: auto;
+}
+
+#spaceship2 {
+    bottom: 20px;
+    right: 200px;
+    width: 150px;
+    height: auto;
+}
+
+#asteroid1 {
+    top: 250px;
+    left: 150px;
+    width: 100px;
+    height: auto;
+}
+
+#asteroid2 {
+    top: 300px;
+    right: 150px;
+    width: 120px;
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.2) rotate(15deg);
+    opacity: 0.8;
+}
+
+@keyframes planet-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+img.planet:hover {
+    animation: planet-spin 1s infinite;
+}
+
+@keyframes asteroid-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+img.asteroid:hover {
+    animation: asteroid-spin 2s infinite;
+}
+
+
