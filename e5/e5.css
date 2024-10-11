@@ -1,0 +1,41 @@
+body{
+    background-image: url("background.png");
+    background-size: 100%;
+}
+
+
+.carousel {
+    top: 0%;
+    left: 25%;
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+.volumeIcon{
+    position: absolute;
+    height: 10vh;
+    width: 10vw;
+}
+
+.carousel-list {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-list li {
+    list-style: none;
+    width: 500px;
+    height: 800px;
+}
+
+.carousel-list img {
+    width: 500px;
+    height: 800px;
+    object-fit: contain;
+}
